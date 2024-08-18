@@ -4,7 +4,7 @@ RUN mkdir /go/src/app/
 WORKDIR /go/src/app/
 COPY ./ /go/src/app/
 
-# RUN go install github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen@latest
+RUN curl -sSf https://atlasgo.sh | sh
 RUN make tidy
 
 ENTRYPOINT [ "go", "run", "./api/" ]
