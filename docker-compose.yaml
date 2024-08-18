@@ -8,3 +8,12 @@ services:
     ports:
       - "8080:8080"
     tty: true
+  db:
+    image: postgres:14.3
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: sampledb
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+      TZ: "Asia/Tokyo"
