@@ -5,9 +5,6 @@ WORKDIR /go/src/app/
 COPY ./ /go/src/app/
 
 RUN curl -sSf https://atlasgo.sh | sh
-RUN go get github.com/golang-migrate/migrate/v4/cmd/migrate
 RUN make tidy
 
-RUN make migrate-reset
-
-ENTRYPOINT [ "go", "run", "./api/" ]
+ENTRYPOINT [ "sh", "docker-entorypoint.sh" ]
