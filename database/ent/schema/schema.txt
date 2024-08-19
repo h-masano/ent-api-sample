@@ -1,0 +1,9 @@
+Users:
+	+-------+--------+--------+----------+----------+---------+---------------+-----------+-----------------------+------------+---------+
+	| Field |  Type  | Unique | Optional | Nillable | Default | UpdateDefault | Immutable |       StructTag       | Validators | Comment |
+	+-------+--------+--------+----------+----------+---------+---------------+-----------+-----------------------+------------+---------+
+	| id    | int    | false  | false    | false    | false   | false         | false     | json:"id,omitempty"   |          0 |         |
+	| age   | int    | false  | false    | false    | false   | false         | false     | json:"age,omitempty"  |          1 |         |
+	| name  | string | false  | false    | false    | true    | false         | false     | json:"name,omitempty" |          0 |         |
+	+-------+--------+--------+----------+----------+---------+---------------+-----------+-----------------------+------------+---------+
+	
